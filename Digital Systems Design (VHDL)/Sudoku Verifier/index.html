@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF8"/> 
+    <title>Sudoku Verifier</title>
+    <link rel="shortcut icon" href="http://dl.dropbox.com/u/69843/dropbox-index/icons/favicon.ico"/>
+    
+    <style>
+        body { font-family: Verdana, sans-serif; font-size: 12px;}
+        a { text-decoration: none; color: #00A; }
+        a:hover { text-decoration: underline; }
+        #dropbox-index-header { padding: 0; margin: 0.5em auto 0.5em 1em; }
+        table#dropbox-index-list { text-align: center; margin: 0 auto 0 1.5em; border-collapse: collapse; }
+        #dropbox-index-list thead { border-bottom: 1px solid #555; }
+        #dropbox-index-list th:hover { cursor: pointer; cursor: hand; background-color: #EEE; }
+        #direction { border: 0; vertical-align: bottom; margin: 0 0.5em;}
+        #dropbox-index-list tbody { border-bottom: 1px solid #555;}
+        #dropbox-index-list tr, th { line-height: 1.7em; min-height: 25px; }
+        #dropbox-index-list tbody tr:hover { background-color: #EEE; }
+        .name { text-align: left; width: 35em; }
+        .name a, thead .name { padding-left: 22px; }
+        .name a { display: block; }
+        .size { text-align: right; width: 7em; padding-right: 1em;}
+        .date { text-align: right; width: 15em; padding-right: 1em;}
+        #dropbox-index-dir-info { margin: 1em auto 0.5em 2em; }
+        #dropbox-index-footer { margin: 1em auto 0.5em 2em; font-size: smaller;}
+        /* Icons */
+        .dir, .back, .file { background-repeat: no-repeat; background-position: 2px 4px;}
+        .back { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/back.png'); }
+        .dir { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/folder.png'); }
+        .file { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/file.png'); }
+        .image { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/image.png'); }
+        .video { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/video.png'); }
+        .music { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/music.png'); }
+        .archive { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/archive.png'); }
+        .package { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/package.png'); }
+        .pdf { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/pdf.png'); }
+        .txt { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/txt.png'); }
+        .markup { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/markup.png'); }
+        .code { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/code.png'); }
+        .font { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/font.png'); }
+        .document { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/document.png'); }
+        .spreadsheet { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/spreadsheet.png'); }
+        .presentation { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/presentation.png'); }
+        .application { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/application.png'); }
+        .plugin { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/plugin.png'); }
+        .iso { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/iso.png'); }
+    </style>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script>
+    function sort() {
+        column = $(this).attr("class").split(' ')[0];
+        $("#direction").remove();
+        if ($(this).hasClass("desc")) {
+            $("#dropbox-index-list thead tr th").each(function(i) { $(this).removeClass("asc").removeClass("desc") });
+            $(this).addClass("asc");
+            reverse = -1;
+        } else {
+            $("#dropbox-index-list thead tr th").each(function(i) { $(this).removeClass("asc").removeClass("desc") });
+            $(this).addClass("desc");
+            reverse = 1;
+        }
+        if (column == "name") {
+            $(this).append('<img src="http://dl.dropbox.com/u/69843/dropbox-index/icons/'+((reverse == 1) ? 'desc' : 'asc')+'.png" id="direction" />');
+        } else {
+            $(this).prepend('<img src="http://dl.dropbox.com/u/69843/dropbox-index/icons/'+((reverse == 1) ? 'desc' : 'asc')+'.png" id="direction" />');
+        }
+        rows = $("#dropbox-index-list tbody tr").detach()
+        rows.sort(function(a, b) {
+            result = $(a).data('type') - $(b).data('type')
+            if (result != 0) { return result }
+            
+            return (($(a).data(column) < $(b).data(column)) - ($(a).data(column) > $(b).data(column))) * reverse
+            
+        });
+        $("#dropbox-index-list tbody").append(rows);
+    }
+    
+    function prepare() {
+        $("#dropbox-index-list tbody tr").each(function(i) {
+            if ($(this).children(".name").hasClass("back")) {
+                $(this).data('type', 1);
+            } else if ($(this).children(".name").hasClass("dir")) {
+                $(this).data('type', 2);
+            } else {
+                $(this).data('type', 3);
+            }
+            $(this).data('name', $(this).children(".name").text().toLowerCase());
+            $(this).data('size', parseInt($(this).children(".size").attr("sort")));
+            $(this).data('date', parseInt($(this).children(".date").attr("sort")));
+        });
+        
+        $("#dropbox-index-list thead tr th").each(function(i) {
+            $(this).bind('click', sort);
+        });
+    }
+
+    $(document).ready(function(){
+        prepare();
+    });
+</script>
+</head>
+<body>
+<h1 id="dropbox-index-header">Sudoku Verifier</h1>
+<table id="dropbox-index-list">
+    <thead>
+        <tr>
+            <th class="name">Name</th><th class="size">Size</th><th class="date">Last Modified</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr><td class="name back"><a href="../index.html">..</a></td><td class="size">&nbsp;</td><td class="date">&nbsp;</td></tr><tr><td class="name file"><a href="circuito3.vhd">circuito3.vhd</a></td><td class="size" sort="5422">5.3 KB</td><td class="date" sort="1306188038.0">2011-05-23&nbsp;23:00:38</td></tr>
+<tr><td class="name file"><a href="clkdiv.vhd">clkdiv.vhd</a></td><td class="size" sort="402">402 bytes</td><td class="date" sort="1316804070.0">2011-09-23&nbsp;19:54:30</td></tr>
+<tr><td class="name file"><a href="control.vhd">control.vhd</a></td><td class="size" sort="4924">4.8 KB</td><td class="date" sort="1306186738.0">2011-05-23&nbsp;22:38:58</td></tr>
+<tr><td class="name file"><a href="counter.vhd">counter.vhd</a></td><td class="size" sort="1289">1.3 KB</td><td class="date" sort="1306178392.0">2011-05-23&nbsp;20:19:52</td></tr>
+<tr><td class="name file"><a href="decode_hexa_chars.vhd">decode_hexa_chars.vhd</a></td><td class="size" sort="2668">2.6 KB</td><td class="date" sort="1304085144.0">2011-04-29&nbsp;14:52:24</td></tr>
+<tr><td class="name file"><a href="encode_hexa_chars.vhd">encode_hexa_chars.vhd</a></td><td class="size" sort="2142">2.1 KB</td><td class="date" sort="1304085144.0">2011-04-29&nbsp;14:52:24</td></tr>
+<tr><td class="name file"><a href="fpga3.vhd">fpga3.vhd</a></td><td class="size" sort="7371">7.2 KB</td><td class="date" sort="1306073578.0">2011-05-22&nbsp;15:12:58</td></tr>
+<tr><td class="name file"><a href="interface_placa.vhd">interface_placa.vhd</a></td><td class="size" sort="3232">3.2 KB</td><td class="date" sort="1304085144.0">2011-04-29&nbsp;14:52:24</td></tr>
+<tr><td class="name file"><a href="interface_serie.vhd">interface_serie.vhd</a></td><td class="size" sort="12960">12.7 KB</td><td class="date" sort="1304085144.0">2011-04-29&nbsp;14:52:24</td></tr>
+<tr><td class="name file"><a href="mem_writer.vhd">mem_writer.vhd</a></td><td class="size" sort="2917">2.8 KB</td><td class="date" sort="1306187256.0">2011-05-23&nbsp;22:47:36</td></tr>
+<tr><td class="name file"><a href="memsdata.vhd">memsdata.vhd</a></td><td class="size" sort="2165">2.1 KB</td><td class="date" sort="1305986606.0">2011-05-21&nbsp;15:03:26</td></tr>
+<tr><td class="name file"><a href="psdlib.vhd">psdlib.vhd</a></td><td class="size" sort="11843">11.6 KB</td><td class="date" sort="1306181314.0">2011-05-23&nbsp;21:08:34</td></tr>
+<tr><td class="name file"><a href="regp.vhd">regp.vhd</a></td><td class="size" sort="1011">1.0 KB</td><td class="date" sort="1316804070.0">2011-09-23&nbsp;19:54:30</td></tr>
+<tr><td class="name file"><a href="tb_circuito.vhd">tb_circuito.vhd</a></td><td class="size" sort="2666">2.6 KB</td><td class="date" sort="1306177438.0">2011-05-23&nbsp;20:03:58</td></tr>
+<tr><td class="name file"><a href="tb_controlo.vhd">tb_controlo.vhd</a></td><td class="size" sort="3767">3.7 KB</td><td class="date" sort="1305987798.0">2011-05-21&nbsp;15:23:18</td></tr>
+<tr><td class="name file"><a href="tb_tester.vhd">tb_tester.vhd</a></td><td class="size" sort="2795">2.7 KB</td><td class="date" sort="1306073228.0">2011-05-22&nbsp;15:07:08</td></tr>
+<tr><td class="name file"><a href="tester.vhd">tester.vhd</a></td><td class="size" sort="1059">1.0 KB</td><td class="date" sort="1316804070.0">2011-09-23&nbsp;19:54:30</td></tr>
+<tr><td class="name file"><a href="UARTcomponent.vhd">UARTcomponent.vhd</a></td><td class="size" sort="12408">12.1 KB</td><td class="date" sort="1304085144.0">2011-04-29&nbsp;14:52:24</td></tr>
+<tr><td class="name file"><a href="validator.vhd">validator.vhd</a></td><td class="size" sort="6170">6.0 KB</td><td class="date" sort="1305645856.0">2011-05-17&nbsp;16:24:16</td></tr>
+<tr><td class="name file"><a href="verifier.vhd">verifier.vhd</a></td><td class="size" sort="2706">2.6 KB</td><td class="date" sort="1305628708.0">2011-05-17&nbsp;11:38:28</td></tr>
+<tr><td class="name file"><a href="verifier_decoder.vhd">verifier_decoder.vhd</a></td><td class="size" sort="2467">2.4 KB</td><td class="date" sort="1304696794.0">2011-05-06&nbsp;16:46:34</td></tr>
+
+    </tbody>
+</table>
+<div id="dropbox-index-footer">Generated on <strong>2011-09-26&nbsp;14:54:26</strong> using <a href="http://code.google.com/p/kosciak-misc/wiki/DropboxIndex">Dropbox-index</a>-0.4.1</a></div>
+<div id="dropbox-index-dir-info">
+
+</div>
+</body>
+</html>

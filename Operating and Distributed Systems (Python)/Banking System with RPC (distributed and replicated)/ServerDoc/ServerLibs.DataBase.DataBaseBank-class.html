@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ServerLibs.DataBase.DataBaseBank</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ServerLibs-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ServerLibs-module.html">Package&nbsp;ServerLibs</a> ::
+        <a href="ServerLibs.DataBase-module.html">Module&nbsp;DataBase</a> ::
+        Class&nbsp;DataBaseBank
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ServerLibs.DataBase.DataBaseBank-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class DataBaseBank</h1><p class="nomargin-top"><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank">source&nbsp;code</a></span></p>
+<p>This class implements the database that exists on each bank server. 
+  This allows storing information of bank accounts such as the start date 
+  and balance.</p>
+  <p>The two main operations to be held in each account is the debit and 
+  credit of an amount that is commanded by terminals such as ATMs, the 
+  website of the bank, etc. In addition to creating, it is also possible 
+  for banks to upgrade the existing accounts on their servers by applying a
+  periodic rate of interest.</p>
+  <p>In the next paragraphs will be explained in detail every method 
+  implemented.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__init__"></a><span class="summary-sig-name">__init__</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__NewLog"></a><span class="summary-sig-name">__NewLog</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.__NewLog">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__readlogdata"></a><span class="summary-sig-name">__readlogdata</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.__readlogdata">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__writelogdata"></a><span class="summary-sig-name">__writelogdata</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.__writelogdata">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="Initialize"></a><span class="summary-sig-name">Initialize</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">initFile</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>)</span><br />
+      Creates the accounts in the database</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Initialize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="close"></a><span class="summary-sig-name">close</span>()</span><br />
+      This method is used to properly close the database in compliance with
+      all its dependencies.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.close">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">The instance of the class responsible for controlling concurrent 
+      accesses to the accounts of the database.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetAccountsLock"></a><span class="summary-sig-name">GetAccountsLock</span>()</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.GetAccountsLock">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">The instance of the class responsible for controlling the 
+      periodically deposit of interest amounts.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetInterestRate"></a><span class="summary-sig-name">GetInterestRate</span>()</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.GetInterestRate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__GetFirstEmptyId"></a><span class="summary-sig-name">__GetFirstEmptyId</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">d</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.__GetFirstEmptyId">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">The acount's entry existing in the database as a dictionary with the 
+      following keys: 'Aamount', 'AdateOfBegin'.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetAccount"></a><span class="summary-sig-name">GetAccount</span>(<span class="summary-sig-arg">Aid</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.GetAccount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">List of acounts IDs.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetAccountIDs"></a><span class="summary-sig-name">GetAccountIDs</span>()</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.GetAccountIDs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">The Aid assigned to the new account</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#NewAccount" class="summary-sig-name">NewAccount</a>(<span class="summary-sig-arg">amount</span>=<span class="summary-sig-default">0.00</span>,
+        <span class="summary-sig-arg">newAid</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Create a new account in the database with the following optional 
+      parameters: an opening amount and an Aid to be allocated.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.NewAccount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#Deposit" class="summary-sig-name">Deposit</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">amount</span>)</span><br />
+      Deposit a specified amount to an account designated.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Deposit">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#Withdrawal" class="summary-sig-name">Withdrawal</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">amount</span>)</span><br />
+      This method withdraw a specified amount to an account designated.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Withdrawal">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#DepositInterest" class="summary-sig-name">DepositInterest</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">rate</span>)</span><br />
+      This method applies the stated interest rate on the account 
+      specified.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.DepositInterest">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#UpdateAccount" class="summary-sig-name">UpdateAccount</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">timeOfBegin</span>,
+        <span class="summary-sig-arg">amount</span>)</span><br />
+      When a new server wants to join the server network, this method is 
+      needed to update the existing accounts on the new server.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.UpdateAccount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#SimpleUpdate" class="summary-sig-name">SimpleUpdate</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">timeOfBegin</span>,
+        <span class="summary-sig-arg">amount</span>)</span><br />
+      When a new server wants to join the server network, this method is 
+      needed to update the existing accounts on the new server.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.SimpleUpdate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="TimeUpdate"></a><span class="summary-sig-name">TimeUpdate</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">begintime</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.TimeUpdate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="ScheduleInterest"></a><span class="summary-sig-name">ScheduleInterest</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.ScheduleInterest">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="logExists"></a><span class="summary-sig-name">logExists</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">num</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.logExists">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="RollBack"></a><span class="summary-sig-name">RollBack</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">num</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.RollBack">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="CheckPoint"></a><span class="summary-sig-name">CheckPoint</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">StartNew</span>)</span><br />
+      This method saves to file a new bank state called checkpoint</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.CheckPoint">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="log_string"></a><span class="summary-sig-name">log_string</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">type</span>,
+        <span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">oBalance</span>,
+        <span class="summary-sig-arg">nBalance</span>,
+        <span class="summary-sig-arg">version</span>,
+        <span class="summary-sig-arg">state</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.log_string">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="writelock"></a><span class="summary-name">writelock</span> = <code title="Lock()">Lock()</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="threshold"></a><span class="summary-name">threshold</span> = <code title="99">99</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="NewAccount"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">NewAccount</span>(<span class="sig-arg">amount</span>=<span class="sig-default">0.00</span>,
+        <span class="sig-arg">newAid</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.NewAccount">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a new account in the database with the following optional 
+  parameters: an opening amount and an Aid to be allocated. It is assumed 
+  that, if given, the latter is not in use, otherwise an exception is 
+  raised.</p>
+  <dl class="fields">
+    <dt>Returns: The Aid assigned to the new account</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Deposit"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Deposit</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">amount</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Deposit">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Deposit a specified amount to an account designated. Both variables 
+  are given as parameter. The account specified must exist in the database,
+  otherwise an exception is raised.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="Withdrawal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Withdrawal</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">amount</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Withdrawal">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This method withdraw a specified amount to an account designated. Both
+  variables are given as parameter. The account specified must exist in the
+  database, otherwise an exception is raised. If the amount indicated will 
+  lead to a negative balance in the account specified, this operation is 
+  not performed and an exception is raised.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="DepositInterest"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">DepositInterest</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">rate</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.DepositInterest">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This method applies the stated interest rate on the account specified.
+  The rate should be a float number between 0 and 1. The account specified 
+  must exist in the database, otherwise an exception is raised.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="UpdateAccount"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">UpdateAccount</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">timeOfBegin</span>,
+        <span class="sig-arg">amount</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.UpdateAccount">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>When a new server wants to join the server network, this method is 
+  needed to update the existing accounts on the new server. The account 
+  specified must exist in the database, otherwise an exception is 
+  raised.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="SimpleUpdate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SimpleUpdate</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">timeOfBegin</span>,
+        <span class="sig-arg">amount</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.SimpleUpdate">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>When a new server wants to join the server network, this method is 
+  needed to update the existing accounts on the new server. The account 
+  specified must exist in the database, otherwise an exception is 
+  raised.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ServerLibs-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec 23 18:33:56 2010
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

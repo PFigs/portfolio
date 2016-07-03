@@ -1,0 +1,33 @@
+Instituto Superior Técnico 2010/2011
+Operating and Distributed Systems
+
+Code written by:
+	Martim Camacho martim.camacho@ist.utl.pt (56755)
+	Filipe Funenga filipe.funenga@ist.utl.pt (57977)
+	Pedro Silva    pedro.silva@ist.utl.pt    (58035)
+
+Credits:
+	 Pyro is written and © by Irmen de Jong
+	 View the software license at: http://www.xs4all.nl/~irmen/pyro3/manual/LICENSE
+
+---SERVER
+usage: python server.py [option=value] [option]...
+	sh=serverHostname	Server hostname.
+	sp=serverPort		Server port.
+	nh=nsHostname		NameServer hostname.
+	np=nsPort			NameServer port.
+	ph=publishHost		The serverHostname to publish at the NameServer.
+	g=group				The group to connect the server API at the NameServer.
+	n=name				The name to connect the server API at the NameServer.
+	f=file				File to initialize the server.
+	h					Display this help menu.
+
+---CLIENT
+usage: python client.py [option=value] [option]...
+	nh=hostname		NameServer hostname.
+	np=port			NameServer port.
+	g=group			The group to look up at the NameServer.
+	f=file			File to initialize the client scheduler.
+	b				Activates benchmarking.
+	v				Activates debug.
+	h				Display this help menu.

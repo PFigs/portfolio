@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ServerLibs.DataBase.DataBaseBank</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ServerLibs-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ServerLibs-module.html">Package&nbsp;ServerLibs</a> ::
+        <a href="ServerLibs.DataBase-module.html">Package&nbsp;DataBase</a> ::
+        Class&nbsp;DataBaseBank
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ServerLibs.DataBase.DataBaseBank-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class DataBaseBank</h1><p class="nomargin-top"><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+  object --+    
+           |    
+<a href="ServerLibs.DataBase.VectorStamps-class.html">VectorStamps</a> --+
+               |
+              <strong class="uidshort">DataBaseBank</strong>
+</pre>
+
+<hr />
+<p>This class defines the database system.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">nObjs</span>=<span class="summary-sig-default">1</span>,
+        <span class="summary-sig-arg">index</span>=<span class="summary-sig-default">0</span>)</span><br />
+      DB( [nObjs] [,index] ) nObjs: indicates the total number of databases
+      to be replicated.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="Close"></a><span class="summary-sig-name">Close</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Close">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__GetFirstEmptyId"></a><span class="summary-sig-name">__GetFirstEmptyId</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">d</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.__GetFirstEmptyId">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Acount's entry (dictionary)</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetAccount"></a><span class="summary-sig-name">GetAccount</span>(<span class="summary-sig-arg">Aid</span>)</span><br />
+      Raises KeyError if Aid is not referencing an acount existing in the 
+      database.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.GetAccount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Sorted list of acount's history</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetAccountHistory"></a><span class="summary-sig-name">GetAccountHistory</span>(<span class="summary-sig-arg">Aid</span>)</span><br />
+      Raises KeyError if Aid is not referencing an acount existing in the 
+      database.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.GetAccountHistory">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Sorted list of acounts IDs.</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetAccountIDs"></a><span class="summary-sig-name">GetAccountIDs</span>()</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.GetAccountIDs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#SaveToFile" class="summary-sig-name">SaveToFile</a>(<span class="summary-sig-arg">filename</span>=<span class="summary-sig-default">...</span>)</span><br />
+      If filename is not given, the default backup name will be used.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.SaveToFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#LoadFromFile" class="summary-sig-name">LoadFromFile</a>(<span class="summary-sig-arg">filename</span>=<span class="summary-sig-default">...</span>)</span><br />
+      If filename is not given, the default backup name will be used.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.LoadFromFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_replace"></a><span class="summary-sig-name">_replace</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank._replace">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Cid</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#NewClient" class="summary-sig-name">NewClient</a>(<span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">address</span>,
+        <span class="summary-sig-arg">birth</span>,
+        <span class="summary-sig-arg">job</span>,
+        <span class="summary-sig-arg">Cid</span>=<span class="summary-sig-default">...</span>)</span><br />
+      If Cid is not given, a new one will be assigned.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.NewClient">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#NewAccount" class="summary-sig-name">NewAccount</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">amount</span>=<span class="summary-sig-default">0.0</span>,
+        <span class="summary-sig-arg">newAid</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">Cid</span>=<span class="summary-sig-default">None</span>)</span><br />
+      NewAccount( [amount] [,Aid] [,Cid] )-&gt;Aid If Aid is not given, a 
+      new one will be assigned.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.NewAccount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Aid</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#UpdateAccount" class="summary-sig-name">UpdateAccount</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">type</span>,
+        <span class="summary-sig-arg">amount</span>,
+        <span class="summary-sig-arg">ufrom</span>=<span class="summary-sig-default">...</span>)</span><br />
+      Raises KeyError if Aid is not valid.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.UpdateAccount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Aid</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#SetAccountOwner" class="summary-sig-name">SetAccountOwner</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">Cid</span>)</span><br />
+      Raises KeyError if Aid or Cid are not valid.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.SetAccountOwner">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Aid</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#Deposit" class="summary-sig-name">Deposit</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">amount</span>,
+        <span class="summary-sig-arg">ufrom</span>=<span class="summary-sig-default">...</span>)</span><br />
+      Raises KeyError if Aid is not valid.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Deposit">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Aid</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#Withdrawal" class="summary-sig-name">Withdrawal</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">amount</span>,
+        <span class="summary-sig-arg">ufrom</span>=<span class="summary-sig-default">...</span>)</span><br />
+      Raises KeyError if Aid is not valid.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Withdrawal">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">Aid</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ServerLibs.DataBase.DataBaseBank-class.html#DepositInterest" class="summary-sig-name">DepositInterest</a>(<span class="summary-sig-arg">Aid</span>,
+        <span class="summary-sig-arg">rate</span>)</span><br />
+      Raises KeyError if Aid is not valid.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.DepositInterest">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="ServerLibs.DataBase.VectorStamps-class.html">VectorStamps</a></code></b>:
+      <code><a href="ServerLibs.DataBase.VectorStamps-class.html#GetVectorStamps">GetVectorStamps</a></code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="ServerLibs.DataBase.VectorStamps-class.html">VectorStamps</a></code></b> (private):
+      <code><a href="ServerLibs.DataBase.VectorStamps-class.html#_GetStampsData" onclick="show_private();">_GetStampsData</a></code>,
+      <code><a href="ServerLibs.DataBase.VectorStamps-class.html#_NewEvent" onclick="show_private();">_NewEvent</a></code>,
+      <code><a href="ServerLibs.DataBase.VectorStamps-class.html#_SetStampsData" onclick="show_private();">_SetStampsData</a></code>
+      </p></div>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">nObjs</span>=<span class="sig-default">1</span>,
+        <span class="sig-arg">index</span>=<span class="sig-default">0</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>DB( [nObjs] [,index] ) nObjs: indicates the total number of databases 
+  to be replicated. Default is one. index: indicates this database index. 
+  Default is zero.</p>
+  <p>Raises ValueError if nObjs or index are not integers. Raises 
+  ValueError if nObjs is not bigger than zero.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SaveToFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SaveToFile</span>(<span class="sig-arg">filename</span>=<span class="sig-default">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.SaveToFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>If filename is not given, the default backup name will be used.</p>
+  <p>Saves a backup of the database to a file.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="LoadFromFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">LoadFromFile</span>(<span class="sig-arg">filename</span>=<span class="sig-default">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.LoadFromFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>If filename is not given, the default backup name will be used.</p>
+  <p>Loads a backup of the database from a file. Every values are replaced 
+  by the ones being loaded from file.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="NewClient"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">NewClient</span>(<span class="sig-arg">name</span>,
+        <span class="sig-arg">address</span>,
+        <span class="sig-arg">birth</span>,
+        <span class="sig-arg">job</span>,
+        <span class="sig-arg">Cid</span>=<span class="sig-default">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.NewClient">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>If Cid is not given, a new one will be assigned. Raises KeyError if a 
+  given Cid is already in use.</p>
+  <p>Creates a new record of a bank customer. Each record contains 
+  information that may give way to statistical purposes or simple data 
+  query.</p>
+  <dl class="fields">
+    <dt>Returns: Cid</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="NewAccount"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">NewAccount</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">amount</span>=<span class="sig-default">0.0</span>,
+        <span class="sig-arg">newAid</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">Cid</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.NewAccount">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>NewAccount( [amount] [,Aid] [,Cid] )-&gt;Aid If Aid is not given, a 
+  new one will be assigned. Raises ValueError if amount is negative. Raises
+  KeyError if a given Cid is not valid. Raises KeyError if a given Aid is 
+  already in use.</p>
+  <p>Creates a new record of a bank account. The accounts may or may not 
+  belong to the bank's clients who are recorded in the database. Any update
+  on the account is recorded in history.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="UpdateAccount"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">UpdateAccount</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">type</span>,
+        <span class="sig-arg">amount</span>,
+        <span class="sig-arg">ufrom</span>=<span class="sig-default">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.UpdateAccount">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Raises KeyError if Aid is not valid. Raises ValueError if type is not 
+  str. Raises ValueError if amount is negative.</p>
+  <p>Adds a new event to the history of an update made to an account. 
+  &quot;Type&quot; can be:</p>
+  <ul>
+    <li>
+      DEBIT
+    </li>
+    <li>
+      CREDIT
+    </li>
+  </ul>
+  <p>&quot;Unknown&quot; may be useful in indicating the receiver/container
+  of transfers.</p>
+  <dl class="fields">
+    <dt>Returns: Aid</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetAccountOwner"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetAccountOwner</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">Cid</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.SetAccountOwner">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Raises KeyError if Aid or Cid are not valid.</p>
+  <p>Assigns ownership of a bank account to a bank customer. Both need to 
+  be registered in the database prior to this assignment.</p>
+  <dl class="fields">
+    <dt>Returns: Aid</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Deposit"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Deposit</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">amount</span>,
+        <span class="sig-arg">ufrom</span>=<span class="sig-default">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Deposit">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Raises KeyError if Aid is not valid. Raises ValueError if amount is 
+  negative.</p>
+  <p>&quot;Unknown&quot; may be useful in indicating the receiver/container
+  of transfers. This method is implemented in order to block concurrent 
+  access to the same account.</p>
+  <dl class="fields">
+    <dt>Returns: Aid</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Withdrawal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Withdrawal</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">amount</span>,
+        <span class="sig-arg">ufrom</span>=<span class="sig-default">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.Withdrawal">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Raises KeyError if Aid is not valid. Raises ValueError if amount makes
+  the account to become without coverage. Raises ValueError if amount is 
+  negative.</p>
+  <p>&quot;Unknown&quot; may be useful in indicating the receiver/container
+  of transfers.</p>
+  <dl class="fields">
+    <dt>Returns: Aid</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="DepositInterest"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">DepositInterest</span>(<span class="sig-arg">Aid</span>,
+        <span class="sig-arg">rate</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ServerLibs.DataBase-pysrc.html#DataBaseBank.DepositInterest">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Raises KeyError if Aid is not valid. Raises ValueError if rate is not 
+  0&lt;rate&lt;1</p>
+  <dl class="fields">
+    <dt>Returns: Aid</dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ServerLibs-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec 23 18:37:18 2010
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

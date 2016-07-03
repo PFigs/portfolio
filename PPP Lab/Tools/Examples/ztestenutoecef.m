@@ -1,0 +1,62 @@
+% TESTENUTOECEF script serves as a debug tool for the fuction xyztolla.
+
+%   INPUT : enu = [142.768289, 161.966841, 20.403658]
+%   OUTPUT: xyz = [4910445.093380, -821633.480531, 3973410.564928]
+
+%   INPUT : enu = [592401.482477179, -1701426.02703467, 1415701.22486627];
+%   OUTPUT: xyz = [6910384.3, -321478.6, 2973549.6];
+
+%   INPUT : enu = [2.09547579288483e-09, -6246866.5355431, 7716455.75043843];     
+%   OUTPUT: xyz = [775858.6194, 4903039.9874, 3991748.6190];
+
+%   INPUT : enu = [2.79396772384644e-09, -6246866.5355431, 7716455.75043843];
+%   OUTPUT: xyz = [-775858.6194, -4903039.9874, 3991748.6190];
+
+%   INPUT : enu = [-823148.928003576, 1963405.78396477, -847032.212976721];
+%   OUTPUT: xyz = [4910384.3, -821478.6, 3973549.6];
+
+
+% Pedro Silva, Instituto Superior Técnico, November 2011
+
+clc
+clear
+disp('ENU - ECEF CONVERSION TESTING SCRIPT');
+
+% OPERATION MODE
+mode = 'ecef';
+
+% EVALUATION POINTS
+enu = [
+         142.768289042966, 161.966840420035, 20.403657938033;
+         592401.482477179, -1701426.02703467, 1415701.22486627;
+         2.09547579288483e-09, -6246866.5355431, 7716455.75043843;
+         2.79396772384644e-09, -6246866.5355431, 7716455.75043843;
+         -823148.928003576, 1963405.78396477, -847032.212976721;
+      ];
+
+% REFERENCE POINTS
+refxyz = [
+        4910445.093380, -821633.480531, 3973410.564928;
+        4910384.3  , -821478.6    , 3973549.6;
+       -775858.6194, -4903039.9874, 3991748.6190;
+       775858.6194 , 4903039.9874 , 3991748.6190;
+        6910384.3  , -321478.6    , 2973549.6
+       ];
+
+% SWITCH REFXYZ TO DESIRABLE UNIT
+%    DEFAULT : REFXYZ is given in ECEF
+tic
+if strcmpi(mode,'deg')
+    refxyz = eceftolla(refxyz);     % REFXYZ in DEG
+elseif strcmpi(mode,'rad')
+    refxyz = eceftolla(refxyz,'rad'); % REFXYZ in RAD
+end
+toc
+% USER SOLUTION
+tic
+xyz = enutoecef(enu,refxyz,mode);
+toc
+
+disp('ECEF SOLUTION');
+disp(enu);
+disp(xyz);
